@@ -21,6 +21,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         System.out.println("此处设置了所有请求都需要登录才能访问");
+        System.out.println("此处设置了所有请求都需要登录才能访问");
+        System.out.println("此处设置了所有请求都需要登录才能访问");
+
         auth.userDetailsService(customUserService());
     }
 
